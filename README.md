@@ -6,7 +6,7 @@
 ## Table of Contents
 
 - [Usage](#usage)
-- [Learning Materials](#Learning Materials)
+- [Learning Materials](#Learning\ Materials)
 - [Support](#support)
 - [Contributing](#contributing)
 
