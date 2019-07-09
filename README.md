@@ -20,10 +20,10 @@ git clone https://github.com/mochsner/.vim.git
 ```
 ## Learning Materials
 
-[4 weeks of Vim](https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85)
-[Interactive tutorial](https://www.openvim.com/)
-[Vim Game](https://vim-adventures.com/)
-[Amazon: Practical Vim](https://www.amazon.com/dp/1680501275/ref=cm_sw_r_cp_awdb_t1_fD9yBb3108A64)
+- [4 weeks of Vim](https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85)
+- [Interactive tutorial](https://www.openvim.com/)
+- [Vim Game](https://vim-adventures.com/)
+- [Amazon: Practical Vim](https://www.amazon.com/dp/1680501275/ref=cm_sw_r_cp_awdb_t1_fD9yBb3108A64)
 
 ## Support
 
