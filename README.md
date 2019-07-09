@@ -1,6 +1,6 @@
 # .vim
 
-:page_facing_up Personal log of .vimrc settings as I work to improve its use.
+:page_facing_up: Personal log of .vimrc settings as I work to improve its use.
 
 
 ## Table of Contents
