@@ -1,7 +1,10 @@
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"[VUNDLE](https://vi.stackexchange.com/questions/388/what-is-the-difference-between-the-vim-plugin-managers)
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Personal Preferences
+set number
+highlight LineNr ctermfg=grey " If gVim => highlight LineNr guifg=#050505
+set hlsearch
+
+""" VUNDLE 
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -9,6 +12,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'tomasr/molokai'
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
@@ -21,7 +25,7 @@ Plugin 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
+" Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}

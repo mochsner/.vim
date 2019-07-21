@@ -6,6 +6,7 @@
 ## Table of Contents
 
 - [Usage](#usage)
+- [Notable Shortcuts](#Notable%20Shortcuts)
 - [Learning Materials](#Learning%20Materials)
 - [Support](#support)
 - [Contributing](#contributing)
@@ -17,6 +18,15 @@ Go to shell's home directory. Clone there. Unsure if this requires restarting (w
 ```sh
 cd ~
 git clone https://github.com/mochsner/.vim.git
+```
+
+## Notable Shortcuts
+```vim
+``` Yank all lines of a file ```
+# %: refer to next command to work on all the lines
+# y: to yank those lines
+# +: copy to system clipboard
+:%y+
 ```
 ## Learning Materials
 
