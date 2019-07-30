@@ -3,6 +3,7 @@
 set number
 highlight LineNr ctermfg=grey " If gVim => highlight LineNr guifg=#050505
 set hlsearch
+set nrformats-=octal
 
 """ VUNDLE 
 set nocompatible              " be iMproved, required
