@@ -7,7 +7,8 @@ set nrformats-=octal "for version < v8.0
 
 """ VUNDLE 
 set nocompatible              " be iMproved, required
-filetype off                  " required
+filetype off                  " require
+
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -15,6 +16,8 @@ call vundle#begin()
 Plugin 'tomasr/molokai'
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+""" GENERAL VUNDLE PLUGINS
 Plugin 'kana/vim-textobj-entire' 
 Plugin 'tpope/vim-commentary'
 " The following are examples of different formats supported.
@@ -33,6 +36,16 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
+
+""" SYNTAX HIGHLIGHTING
+"   RUBY
+set nocompatible      " We're running Vim, not Vi!
+syntax on             " Enable syntax highlighting
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
+Plugin 'vim-ruby/vim-ruby'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
