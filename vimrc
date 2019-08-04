@@ -4,6 +4,7 @@ set number
 highlight LineNr ctermfg=grey " If gVim => highlight LineNr guifg=#050505
 set hlsearch
 set nrformats-=octal "for version < v8.0
+set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"
 
 """ VUNDLE 
 set nocompatible              " be iMproved, required
@@ -60,4 +61,18 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line 
+
+""" NON-PLUGIN STUFF
+" :retab changes *everything*, not just start of lines
+fun! Retab(expandtab)
+    let l:spaces = repeat(' ', &tabstop)
+
+    " Replace tabs with spaces
+    if a:expandtab
+        silent! execute '%substitute#^\%(' . l:spaces . '\)\+#\=repeat("\t", len(submatch(0)) / &tabstop)#e'
+    " Replace spaces with tabs
+    else
+        silent! execute '%substitute#^\%(\t\)\+#\=repeat("' . l:spaces . '", len(submatch(0)))#e'
+    endif
+endfun
+
