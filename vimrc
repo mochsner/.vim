@@ -6,11 +6,18 @@ set hlsearch
 set nrformats-=octal "for version < v8.0
 set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"
 
-""" VUNDLE 
+filetype plugin indent on
+" On pressing tab, insert 2 spaces
+set expandtab
+" show existing tab with 2 spaces width
+set tabstop=2
+set softtabstop=2
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
+
+""" VUNDLE """""""""""""""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " require
-
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -19,7 +26,9 @@ Plugin 'tomasr/molokai'
 Plugin 'gmarik/Vundle.vim'
 
 """ GENERAL VUNDLE PLUGINS
-Plugin 'kana/vim-textobj-entire' 
+"Plugin 'kana/vim-textobj-entire' " Commenting due to error on
+"vim-textobj-entire/plugin/testobj/entire.vim: line 34, Unknown function:
+"textobj#user#plugin - Date 12/15/2019
 Plugin 'tpope/vim-commentary'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.

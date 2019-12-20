@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/mo/mochsner.github.io'
-let g:netrw_dirhist_2='/home/mo/mochsner.github.io/_posts'
-let g:netrw_dirhist_3='/home/mo/mochsner.github.io'
-let g:netrw_dirhist_4='/home/mo/mochsner.github.io/_posts'
-let g:netrw_dirhist_5='/home/mo/.vim'
-let g:netrw_dirhist_6='/home/mo/.vim/bundle/Vundle.vim'
-let g:netrw_dirhist_7='/home/mo/mochsner.github.io/_posts'
-let g:netrw_dirhist_8='/home/mo/.vim'
-let g:netrw_dirhist_9='/home/mo/app-menu'
+let g:netrw_dirhist_cnt =0
