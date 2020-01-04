@@ -15,6 +15,10 @@
 
 Go to shell's home directory. Clone there. Unsure if this requires restarting (will update)
 
+### From VIM
+- Source Vim Config `:source ./.vim/vimrc`
+- Plugin Install `vim +PluginInstall +qall`
+
 ```sh
 cd ~
 git clone https://github.com/mochsner/.vim.git

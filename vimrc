@@ -26,6 +26,9 @@ Plugin 'tomasr/molokai'
 Plugin 'gmarik/Vundle.vim'
 
 """ GENERAL VUNDLE PLUGINS
+" surround.vim (github: https://github.com/tpope/vim-surround)
+Plugin 'tpope/vim-surround'
+Plugin 'jaxbot/browserlink.vim'
 "Plugin 'kana/vim-textobj-entire' " Commenting due to error on
 "vim-textobj-entire/plugin/testobj/entire.vim: line 34, Unknown function:
 "textobj#user#plugin - Date 12/15/2019
