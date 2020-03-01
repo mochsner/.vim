@@ -26,8 +26,9 @@ set shiftwidth=2
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ PATHOGEN
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+execute pathogen#infect()
+"call pathogen#runtime_append_all_bundles()
+"call pathogen#helptags()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ END PATHOGEN
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -77,6 +78,10 @@ Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'chrisbra/Colorizer' " TODO Currently broken - errors out during :ColorHighlight
 " Vagrant - VM Provisioning + Configuration Filse
 Plugin 'hashivim/vim-vagrant'
+" Color CSVs by column. Including RBQL queries
+" To run an RBQL query either press F5 or enter the query in vim command line e.g. :Select a1, a2
+" See: https://github.com/mechatroner/rainbow_csv for queries
+Plugin 'mechatroner/rainbow_csv'
 "   RUBY
 set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
