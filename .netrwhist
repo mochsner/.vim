@@ -1,2 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/mochsner/code/ansible/ansible-for-devops/nodejs-role/roles/nodejs'
+let g:netrw_dirhist_2='/home/mochsner/code/ansible/ansible-for-devops/nodejs-role/roles/nodejs/tasks'
+let g:netrw_dirhist_3='/home/mochsner/code/ansible/ansible-for-devops/lamp-infrastructure/playbooks/varnish/templates'
+let g:netrw_dirhist_4='/home/mochsner/code/ansible/ansible-for-devops/lamp-infrastructure/playbooks/www'
+let g:netrw_dirhist_5='/etc/profile.d'
+let g:netrw_dirhist_6='/home/mochsner/code/ansible/ansible-for-devops/lamp-infrastructure/playbooks/www/templates'
