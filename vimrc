@@ -3,11 +3,6 @@
 """ vimrc for use my Marc Ochsner
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" Syntax Highlighting
-color dracula
-"let g:molokai_original = 1
-let g:rehash256 = 1
-syntax on
 """ Personal Preferences
 set number
 highlight LineNr ctermfg=grey " If gVim => highlight LineNr guifg=#050505
@@ -105,8 +100,14 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ NON-PLUGIN STUFF
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Syntax Highlighting
+color dracula
+"let g:molokai_original = 1
+let g:rehash256 = 1
+syntax on
 " :retab changes *everything*, not just start of lines
 fun! Retab(expandtab)
     let l:spaces = repeat(' ', &tabstop)
