@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/mochsner/code/ansible/ansible-for-devops/lamp-infrastructure/playbooks/www/templates'
-let g:netrw_dirhist_2='/home/mochsner/code/ansible/ansible-for-devops/lamp-infrastructure/playbooks/memcached'
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/mochsner/code/web/forever 1.03/template/onepage'
+let g:netrw_dirhist_4='/home/mochsner/code/web/forever 1.03'
+let g:netrw_dirhist_3='/home/mochsner/code/docker/node-bulletin-board/bulletin-board-app/backend'
+let g:netrw_dirhist_2='/home/mochsner/code/docker/node-bulletin-board/bulletin-board-app'
+let g:netrw_dirhist_1='/home/mochsner/code/docker/node-bulletin-board'

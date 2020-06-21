@@ -148,14 +148,17 @@ function! s:setupHandlers()
   endif
 endfunction
 
-augroup browserlink
-  autocmd!
-  exec 'autocmd BufWritePost *.' . join(s:bl_pagefileexts, ',*.') . ' call s:setupHandlers()'
-augroup END
+" Removed since storage file for this become corrupted
+"augroup browserlink
+"  autocmd!
+"  exec 'autocmd BufWritePost *.' . join(s:bl_pagefileexts, ',*.') . ' call s:setupHandlers()'
+"augroup END
 " Allow w!! to save as sudo
 cmap w!! %!sudo tee > /dev/null %
 
 map <F12> :call FillLine('-')
+nnoremap <F5> :GundoToggle<CR>
+
 
 """ 'dense-analysis/ale'
 let g:syntastic_yaml_checkers = ['yamllint']
