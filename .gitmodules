@@ -28,3 +28,6 @@
 [submodule "bundle/vim-notes"]
 	path = bundle/vim-notes
 	url = https://github.com/xolox/vim-notes.git
+[submodule "bundle/screen"]
+	path = bundle/screen
+	url = https://github.com/ervandew/screen.git
