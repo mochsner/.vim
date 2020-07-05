@@ -20,7 +20,7 @@ git clone --recursive https://github.com/mochsner/.vim ~/_vim
 ln -s ~/_vim/vimrc ~/.vimrc
 ln -s ~/_vim/gvimrc ~/.gvimrc
 
-Option B: Clone then update submodules
+Option B: Clone then update submodules (?)
 ```bash
 git clone http://github.com/mochsner/.vim ~/_vim
 ln -s ~/_vim/vimrc ~/.vimrc
