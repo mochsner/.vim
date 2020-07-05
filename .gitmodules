@@ -13,3 +13,6 @@
 [submodule "bundle/theme-dracula"]
 	path = bundle/theme-dracula
 	url = https://github.com/dracula/vim
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
