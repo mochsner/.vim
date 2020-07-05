@@ -10,3 +10,6 @@
 [submodule "bundle/vim"]
 	path = bundle/vim
 	url = https://github.com/dracula/vim
+[submodule "bundle/theme-dracula"]
+	path = bundle/theme-dracula
+	url = https://github.com/dracula/vim
