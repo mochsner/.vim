@@ -30,76 +30,76 @@ execute pathogen#infect()
 """----------------------------------------------------------------------------
 """ VUNDLE 
 """----------------------------------------------------------------------------
-set nocompatible              " be iMproved, required
-filetype off                  " require
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'tomasr/molokai'
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"""  General Vundle Plugins must go below here
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" surround.vim (github: https://github.com/tpope/vim-surround)
-Plugin 'tpope/vim-surround'
-"Plugin 'jaxbot/browserlink.vim'
-"Plugin 'kana/vim-textobj-entire' " Commenting due to error on
-"vim-textobj-entire/plugin/testobj/entire.vim: line 34, Unknown function:
-"textobj#user#plugin - Date 12/15/2019
-Plugin 'tpope/vim-commentary'
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-"Plugin 'iamcco/markdown-preview.nvim'
-let vim_markdown_preview_github=1
-Plugin 'JamshedVesuna/vim-markdown-preview'
-" HEx Colors
-Plugin 'chrisbra/Colorizer' " TODO Currently broken - errors out during :ColorHighlight
-" Vagrant - VM Provisioning + Configuration Filse
-Plugin 'hashivim/vim-vagrant'
-" Color CSVs by column. Including RBQL queries
-" To run an RBQL query either press F5 or enter the query in vim command line e.g. :Select a1, a2
-" See: https://github.com/mechatroner/rainbow_csv for queries
-Plugin 'mechatroner/rainbow_csv'
-"   RUBY
-set nocompatible      " We're running Vim, not Vi!
-syntax on             " Enable syntax highlighting
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'dense-analysis/ale'
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""^
-" All of your Plugins must be added before the following line
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""^
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
+  " set nocompatible              " be iMproved, required
+  " filetype off                  " require
+  " " set the runtime path to include Vundle and initialize
+  " set rtp+=~/.vim/bundle/Vundle.vim
+  " call vundle#begin()
+  " Plugin 'tomasr/molokai'
+  " " let Vundle manage Vundle, required
+  " Plugin 'gmarik/Vundle.vim'
+  " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+  " """  General Vundle Plugins must go below here
+  " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+  " " surround.vim (github: https://github.com/tpope/vim-surround)
+  " Plugin 'tpope/vim-surround'
+  " "Plugin 'jaxbot/browserlink.vim'
+  " "Plugin 'kana/vim-textobj-entire' " Commenting due to error on
+  " "vim-textobj-entire/plugin/testobj/entire.vim: line 34, Unknown function:
+  " "textobj#user#plugin - Date 12/15/2019
+  " Plugin 'tpope/vim-commentary'
+  " " The following are examples of different formats supported.
+  " " Keep Plugin commands between vundle#begin/end.
+  " " plugin on GitHub repo
+  " Plugin 'tpope/vim-fugitive'
+  " " plugin from http://vim-scripts.org/vim/scripts.html
+  " " Plugin 'L9'
+  " " Git plugin not hosted on GitHub
+  " Plugin 'git://git.wincent.com/command-t.git'
+  " " git repos on your local machine (i.e. when working on your own plugin)
+  " " Plugin 'file:///home/gmarik/path/to/plugin'
+  " " The sparkup vim script is in a subdirectory of this repo called vim.
+  " " Pass the path to set the runtimepath properly.
+  " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+  " " Install L9 and avoid a Naming conflict if you've already installed a
+  " " different version somewhere else.
+  " " Plugin 'ascenator/L9', {'name': 'newL9'}
+  " Plugin 'godlygeek/tabular'
+  " Plugin 'plasticboy/vim-markdown'
+  " "Plugin 'iamcco/markdown-preview.nvim'
+  " let vim_markdown_preview_github=1
+  " Plugin 'JamshedVesuna/vim-markdown-preview'
+  " " HEx Colors
+  " Plugin 'chrisbra/Colorizer' " TODO Currently broken - errors out during :ColorHighlight
+  " " Vagrant - VM Provisioning + Configuration Filse
+  " Plugin 'hashivim/vim-vagrant'
+  " " Color CSVs by column. Including RBQL queries
+  " " To run an RBQL query either press F5 or enter the query in vim command line e.g. :Select a1, a2
+  " " See: https://github.com/mechatroner/rainbow_csv for queries
+  " Plugin 'mechatroner/rainbow_csv'
+  " "   RUBY
+  " set nocompatible      " We're running Vim, not Vi!
+  " syntax on             " Enable syntax highlighting
+  " filetype on           " Enable filetype detection
+  " filetype indent on    " Enable filetype-specific indenting
+  " filetype plugin on    " Enable filetype-specific plugins
+  " Plugin 'vim-ruby/vim-ruby'
+  " Plugin 'dense-analysis/ale'
+  " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""^
+  " " All of your Plugins must be added before the following line
+  " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""^
+  " call vundle#end()            " required
+  " filetype plugin indent on    " required
+  " " To ignore plugin indent changes, instead use:
+  " "filetype plugin on
+  " "
+  " " Brief help
+  " " :PluginList       - lists configured plugins
+  " " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+  " " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+  " " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+  " "
+  " " see :h vundle for more details or wiki for FAQ
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ NON-PLUGIN STUFF
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
