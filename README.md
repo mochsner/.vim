@@ -4,30 +4,55 @@
 
 
 ## Table of Contents
-
 - [Install](#install)
 - [Update](#update)
-- [Notable Shortcuts](#Notable%20Shortcuts)
+- [Pathogen Usage](#pathogen)
+- [Vim Shortcuts](#Notable%20Shortcuts)
 - [Learning Materials](#Learning%20Materials)
 - [Support](#support)
 - [Contributing](#contributing)
 
 ## Install
+Option A: Clone with submodules
 ```bash
-cd ~
-git clone http://github.com/username/dotvim.git ~/.vim
-ln -s ~/.vim/vimrc ~/.vimrc
-ln -s ~/.vim/gvimrc ~/.gvimrc
+git clone --recursive https://github.com/mochsner/.vim ~/_vim
+# (or) 
+ln -s ~/_vim/vimrc ~/.vimrc
+ln -s ~/_vim/gvimrc ~/.gvimrc
+
+Option B: Clone then update submodules
+```bash
+git clone http://github.com/mochsner/.vim ~/_vim
+ln -s ~/_vim/vimrc ~/.vimrc
+ln -s ~/_vim/gvimrc ~/.gvimrc
 cd ~/.vim
-git submodule init
-git submodule update
-(or) git submodule update --init.
+git submodule update --init --recursive # Incase of nested submodules
 ```
 
 ## Update
 ```bash
 git submodule foreach git pull origin master
 ```
+or
+```bash
+git submodule update --init --recursive # Incase of nested submodules
+```
+
+## Pathogen
+Add submodules (new pathogen plugins)
+```bash
+cd ~/_vim/bundle/
+git submodule add https://github.com/user/repo
+```
+Pathogen modules are loaded automatically via .vim/autoload/pathogen.vim, and below in vimrc:
+```
+execute pathogen#infect()               ### Uses ~/.vim/bundle as the src folder
+```
+or
+```
+execute pathogen#infect('folder/{}')    ### Uses ~/.vim/folder as the src folder
+```
+
 
 ### From VIM
 - Source Vim Config `:source ./.vim/vimrc`
@@ -47,18 +72,16 @@ git clone https://github.com/mochsner/.vim.git
 :%y+
 ```
 ## Learning Materials
-
+- [Pathogen](https://github.com/tpope/vim-pathogen)
 - [4 weeks of Vim](https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85)
 - [Interactive tutorial](https://www.openvim.com/)
 - [Vim Game](https://vim-adventures.com/)
 - [Amazon: Practical Vim](https://www.amazon.com/dp/1680501275/ref=cm_sw_r_cp_awdb_t1_fD9yBb3108A64)
 
 ## Support
-
-Please [open an issue](https://github.com/mochsner/.vim/issues/new) for support.
+[open an issue](https://github.com/mochsner/.vim/issues/new)
 
 ## Contributing
-
 Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/mochsner/.vim/compare/).
 
 <sub>README.md template taken from https://github.com/fraction/readme-boilerplate</sub>
