@@ -1,0 +1,2 @@
+# Automatically convert any changes for text-based files to Only use LF (\n or ^M), rather than CR (\r\n)
+* text=auto eol=lf
