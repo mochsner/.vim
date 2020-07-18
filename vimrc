@@ -159,6 +159,12 @@ cmap w!! %!sudo tee > /dev/null %
 map <F12> :call FillLine('-')
 nnoremap <F5> :GundoToggle<CR>
 
+## START NERDTREE
+silent! nmap <C-p> :NERDTreeToggle<CR>
+silent! map <F3> :NERDTreeFind<CR>
+let g:NERDTreeMapActivateNode="<F3>"
+let g:NERDTreeMapPreview="<F4>"
+## END NERDTREE
 
 """ 'dense-analysis/ale'
 let g:syntastic_yaml_checkers = ['yamllint']
