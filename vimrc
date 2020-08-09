@@ -120,7 +120,9 @@ fun! Retab(expandtab)
         silent! execute '%substitute#^\%(\t\)\+#\=repeat("' . l:spaces . '", len(submatch(0)))#e'
     endif
 endfun
-
+""" RUNNING PYTHON SHORTCUT
+autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 """ JEKYLL PAGES (https://ryanlue.com/posts/2016-11-03-vim-plugins-for-jekyll)
 
 " Disable built-in event handling...
