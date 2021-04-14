@@ -104,7 +104,7 @@ execute pathogen#infect()
 """ NON-PLUGIN STUFF
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Syntax Highlighting
-color dracula
+" color dracula -- CURRENTLY NOT FOUND
 "let g:molokai_original = 1
 let g:rehash256 = 1
 syntax on
